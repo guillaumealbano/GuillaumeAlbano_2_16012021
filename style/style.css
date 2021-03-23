@@ -89,3 +89,180 @@ a {
 }
 /* -- FIN DU HEADER DE LA PAGE HTML -- */
 
+/* -- ***DEBUT DU MAIN DE LA PAGE HTML***-- */
+.Main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* -- *1,2* a *1,5* DEBUT SECTION RECHERCHE DE LA PAGE HTML (H1 & PARA / BOUTON / FILTRES / PARA) -- */
+
+/* -- *1,2* TITRE H1 & PARA (TROUVEZ VOTRE .... EN PLEIN ... )-- */
+.Rh {
+  margin-bottom: 0.5rem;
+}
+.Rpara {
+  margin-top: 0;
+}
+
+/* -- MEDIA QUERIES *1,2* a *1,5* DEBUT DE LA SECTION RECHERCHE DE LA PAGE HTML -- */
+@media screen and (max-width: 650px) {
+
+  .Rsearch {
+    display: none;
+  }
+  .Rfiltersh {
+    width: 100%;
+  }
+  .Rfilter {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Rform {
+    display: flex;
+    width: 100%;
+  }
+  .Rinput {
+    flex: 1;
+  }
+  .Rdata {
+    display: none;
+  }
+  .Ricon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .Rsearch {
+    display: block;
+  }
+  .Rsearchicon {
+    display: none !important;
+  }
+}
+
+/* -- <!-- *1,3* BOUTON DE RECHERCHE --> -- */
+.Rform {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+.Rspan {
+  background-color: #F2F2F2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+.Rspanicon {
+  margin-left: 0.1rem;
+}
+.Rinput {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+.Rinput::placeholder {
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  color: #070707;
+}
+.Rbutton {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* -- *1,4* LES 4 FILTRES (ECONOMIQUE + FAMILIAL + ROMATIQUE + ANIMAUX) -- */
+.Rfilters {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.Rfiltersh {
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+/* -- *1,4*1* a *1,4*4* LES 4 FILTRES (ECONOMIQUE + FAMILIAL + ROMATIQUE + ANIMAUX) -- */
+.Rfilter {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  font-weight: bold;
+}
+.Rfilter:last-child {
+  margin-right: 0;
+}
+.Rfilter:hover {
+  background-color: #ffffff;
+  transform: scale(1.015);
+}
+.Rframe {
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+.Rframeicon {
+  color: blue;
+}
+.Rfiltersname {
+  margin: 0 1rem;
+}
+
+/* --  *1,5* PARAGRAPHE SOUS LES FILTRES  -- */
+.Rinfo {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+.Rinfoicondiv {
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.Rinfoicon {
+  color: #0065FC;
+}
+.Rinfopara {
+  margin: 0;
+}
+/* -- FIN SECTION RECHERCHE DE LA PAGE HTML (H1 & PARA / BOUTON / FILTRES / PARA) -->
+
