@@ -266,3 +266,162 @@ a {
 }
 /* -- FIN SECTION RECHERCHE DE LA PAGE HTML (H1 & PARA / BOUTON / FILTRES / PARA) -->
 
+/* <!-- DEBUT DU HEADER DE LA SECTION HEBERGEMENT --> */
+.Lodgallheader {
+  grid-column: 1/-1;
+}
+.Lodgallheaderh {
+  margin: 0;
+}
+/* <!-- FIN DU HEADER DE LA SECTION HEBERGEMENT --> */
+
+/* <!-- *2,1* a *2,2* DEBUT - SECTION HEBERGEMENTS A MARSEILLE --> */ 
+.Lodg {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+}
+.Lodgall {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+/* <!-- FOND DES CARTES D'HEBERGEMENTS A MARSEILLE + ASIDE  --> */   
+.Lodgall, .Lodgpop {
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+/* <!-- *2,1*1* a *2,1*6* LES 6 HEBERGEMENTS A MARSEILLE - --> */
+.Lodgalllead {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+}
+.Lodgallfig {
+  margin: 0;
+}
+.Lodgallimg {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.Lodgallh {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.Lodgallpara {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+.Lodgallparam {
+  font-weight: bold;
+}
+.Lodgallstars {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+.Lodgallicons {
+  color: #0065fc;
+}
+.Lodgalliconss {
+  color: #d9d9d9;
+}
+
+/* <!-- *2,1*7* HEBERGEMENTS A MARSEILLE - AFFICHER PLUS --> */
+.Lodgallplus {
+  font-weight: bold;
+}
+
+/* <!-- *2,2* LES 3 HEBERGEMENTS POPULAIRES A MARSEILLE - ASIDE -  --> */
+.Lodgpop {
+  display: grid;
+  row-gap: 2rem;
+  align-items: start;
+  grid-template-rows: auto repeat(3, 1fr);
+}
+.Lodgpoph {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* <!-- *2,2*1* a *2,2*3* DEBUT LES 3 HEBERGEMENTS POPULAIRES A MARSEILLE - ASIDE - --> */
+.Lodgpopa {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+.Lodgpopdiv {
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+.Lodgpopimg {
+  border-radius: 1rem 0 0 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Lodgpopn {
+  display: flex;
+  flex-direction: column;
+}
+.Lodgpopc {
+  flex: 1;
+}
+.LodgpopLodgalllead {
+  height: 8.75rem;
+}
+
+/* <!-- MEDIA QUERIES *2,1* a *2,2* HEBERGEMENTS A MARSEILLE --> */
+@media (max-width: 1440px) {
+  .Lodg {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .Lodgpop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+  }
+  .Lodgpoph {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 1000px) {
+  .Lodgpop {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+  }
+}
+@media (min-width: 925px) {
+  .Lodgall {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 925px) and (min-width: 650px) {
+  .Lodgall {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .Lodgall {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -- *2,1* a *2,2* FIN - SECTION HEBERGEMENT A MARSEILLE -- */
+
