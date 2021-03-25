@@ -509,10 +509,6 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
   }
-  @media (max-width: 600px) {
-    .Lodgallh {
-      font-size: x-small;
-    }
 }
 /* -- *3,1* FIN - SECTION ACTIVITE A MARSEILLE -- */
 
